@@ -22,7 +22,8 @@ class Congress {
             fullName: `${rep.title} ${rep.first_name} ${rep.last_name}`,
             party: rep.party,
             phone: rep.phone,
-            state: rep.state,
+            state: rep.state_name,
+            img: `https://theunitedstates.io/images/congress/225x275/${rep.bioguide_id}.jpg`
           }
         })
 

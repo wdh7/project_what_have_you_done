@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Legislators</title>
+    <link rel='stylesheet' href='../public/styles/reset.css'>
+    <link rel='stylesheet' href='../public/styles/style.css'>
+  </head>
+  <body>
+
+    <div>
+      <h1>What Have You Done?</h1>
+      <p>{{zip}}</p>
+    </div>
+
+    <section>
+      <div>
+        <h3>House</h3>
+
+        {{#each house as |member|}}
+          <h4><a href='#'>{{member.fullName}}</a></h4>
+          <img src='{{member.img}}' />
+          <p>{{member.party}}-{{member.state}}</p>
+        {{/each}}
+
+      </div>
+
+      <div>
+        <h3>Senate</h3>
+
+        {{#each senate as |senator|}}
+          <h4><a href='#'>{{senator.fullName}}</a></h4>
+          <img src='{{senator.img}}' />
+          <p>{{senator.party}}-{{senator.state}}</p>
+        {{/each}}
+      </div>
+    </section>
+
+
+  </body>
+</html>
