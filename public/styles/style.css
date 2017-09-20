@@ -3,8 +3,16 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  line-height: 30px;
+}
+
+
+/* Global */
 h1 {
   font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 
@@ -19,4 +27,95 @@ h4 {
 
 p {
   font-size: 1rem;
+}
+
+button {
+  padding: 6px 10px;
+  border-style: none;
+  background-color: rgba(33, 150, 243, 0.68);
+}
+
+img {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+
+/* Index styles */
+.main {
+  width: 100%;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.main-container h1 {
+  display: inline-block;
+  background-color: yellow;
+  padding: 5px 10px;
+}
+
+.main-container p {
+  color: #808080;
+  margin-bottom: 30px;
+}
+
+.main-container input[type='text'] {
+  width: 105px;
+  height: 20px;
+  text-align: right;
+}
+
+
+
+/* Legistalors styles */
+.legislators {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.legislators-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.legislators-wrapper h1 {
+  display: inline-block;
+  background-color: yellow;
+  padding: 5px 10px;
+}
+
+.legislators-header p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.legislators-header {
+  text-align: center;
+}
+
+#members h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.9rem;
+  color: #808080;
+  margin-bottom: 40px;
+}
+
+.member {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }

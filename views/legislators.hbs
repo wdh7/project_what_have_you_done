@@ -8,34 +8,40 @@
   </head>
   <body>
 
-    <div>
-      <h1>What Have You Done?</h1>
-      <p>{{zip}}</p>
-    </div>
+    <section class='legislators'>
+      <div class='legislators-wrapper'>
 
-    <section>
-      <div>
-        <h3>House</h3>
+        <div class='legislators-header'>
+          <h1>What Have You Done?</h1>
+          <p>{{zip}}</p>
+        </div>
 
-        {{#each house as |member|}}
-          <h4><a href='#'>{{member.fullName}}</a></h4>
-          <img src='{{member.img}}' />
-          <p>{{member.party}}-{{member.state}}</p>
-        {{/each}}
+        <section id='members'>
+          <div class='members'>
+            <h3>House</h3>
+              {{#each house as |member|}}
+              <div class='member'>
+                <img src='{{member.img}}' />
+                <h4><a href='#'>{{member.fullName}}</a></h4>
+                <h4>{{member.party}}-{{member.state}}</h4>
+              </div>
+              {{/each}}
+          </div>
 
-      </div>
+          <div class='members'>
+            <h3>Senate</h3>
+              {{#each senate as |senator|}}
+              <div class='member'>
+                <img src='{{senator.img}}' />
+                <h4><a href='#'>{{senator.fullName}}</a></h4>
+                <h4>{{senator.party}}-{{senator.state}}</h4>
+              </div>
+            {{/each}}
+          </div>
+        </section>
 
-      <div>
-        <h3>Senate</h3>
-
-        {{#each senate as |senator|}}
-          <h4><a href='#'>{{senator.fullName}}</a></h4>
-          <img src='{{senator.img}}' />
-          <p>{{senator.party}}-{{senator.state}}</p>
-        {{/each}}
       </div>
     </section>
-
 
   </body>
 </html>
