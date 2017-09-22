@@ -22,7 +22,7 @@
               {{#each house as |member|}}
               <div class='member'>
                 <img src='{{member.img}}' />
-                <h4><a href='#'>{{member.fullName}}</a></h4>
+                <h4><a href='/profile/{{member.id}}'>{{member.fullName}}</a></h4>
                 <h4>{{member.party}}-{{member.state}}</h4>
               </div>
               {{/each}}
@@ -33,7 +33,7 @@
               {{#each senate as |senator|}}
               <div class='member'>
                 <img src='{{senator.img}}' />
-                <h4><a href='#'>{{senator.fullName}}</a></h4>
+                <h4><a href='/profile/{{senator.id}}'>{{senator.fullName}}</a></h4>
                 <h4>{{senator.party}}-{{senator.state}}</h4>
               </div>
             {{/each}}
